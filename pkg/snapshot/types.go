@@ -13,6 +13,7 @@ import (
 
 // TODO: mv this into pkg/snapshot/v1/types.go?
 const ApiVersion = "V1"
+const ContentTypeJSON = "application/json"
 
 // SecretRef is a secret reference -- basically, a namespace/name pair.
 type SecretRef struct {

@@ -6,6 +6,7 @@
 syntax = "proto3";
 
 import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
 
 package agent;
 
@@ -52,6 +53,9 @@ message Snapshot {
   string content_type = 5;
   // api version of the raw snapshot
   string api_version = 6;
+  // when the snapshot was taken.
+  // so the agentcom can throw out older snapshots
+  google.protobuf.Timestamp snapshot_ts = 7;
 }
 
 
