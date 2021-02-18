@@ -40,6 +40,8 @@ message Identity {
 
   // Label or description for the user
   string label = 6;
+
+  string cluster_name = 7;
 }
 
 // Information that Ambassador's Agent can send to the Director
